@@ -19,3 +19,12 @@ integration-test:
     KAFKA_ADVERTISED_HOSTNAME: kafka
   ...
 ```
+
+docker-compose example:
+```yaml
+services:
+  kafka:
+    image: mgid/kafka:latest
+    environment:
+      KAFKA_ADVERTISED_HOSTNAME: kafka
+```
