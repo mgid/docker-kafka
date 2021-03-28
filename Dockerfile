@@ -2,7 +2,7 @@ FROM openjdk:8-jre-alpine
 
 EXPOSE 2181/tcp 9092/tcp
 
-ARG KAFKA_VERSION=2.5.0
+ARG KAFKA_VERSION=2.6.1
 ARG SCALA_VERSION=2.13
 
 # advertised hostname for kafka listener
