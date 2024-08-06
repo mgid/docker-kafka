@@ -5,10 +5,10 @@ Lightweight docker image with Apache Kafka (single broker mode) for development 
 
 Local run:
 ```shell
-docker run --rm -p 2181:2181 -p 9092:9092 mgid/kafka
+docker run --rm -p 9092:9092 mgid/kafka
 ```
 
-.gitlab-ci.yml example:
+`.gitlab-ci.yml` example:
 ```yaml
 integration-test:
   stage: test
@@ -20,7 +20,7 @@ integration-test:
   ...
 ```
 
-docker-compose example:
+`docker-compose` example:
 ```yaml
 services:
   kafka:
